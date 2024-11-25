@@ -61,37 +61,37 @@
 
 ## Table `orders`
 
-| Field          | Type        | Description                |
-| -------------- | ----------- | -------------------------- |
-| `id`           | SERIAL (PK) | Unique indeficator         |
-| `order_number` | VARCHAR     | Order number               |
-| `order_date`   | TIMESTAMP   | Order date                 |
-| `client_id`    | UUID (FK)   | Foreign key for client     |
-| `status`       | NUMERIC     | Order status: new, accpted |
+| Field          | Type          | Description                |
+| -------------- | :-----------: | -------------------------- |
+| `id`           | SERIAL (PK)   | Unique indeficator         |
+| `order_number` | VARCHAR       | Order number               |
+| `order_date`   | TIMESTAMP     | Order date                 |
+| `client_id`    | UUID (FK)     | Foreign key for client     |
+| `status`       | NUMERIC       | Order status: new, accpted |
 
 ## Table `invoices`
 
-| Field            | Type        | Description           |
-| ---------------- | ----------- | --------------------- |
-| `id`             | SERIAL (PK) | Unique indeficator    |
-| `invoice_number` | VARCHAR     | Invoce number         |
-| `invoice_date`   | TIMESTAMP   | Invoce date           |
-| `order_id`       | UUID (FK)   | Foreign key for order |
-| `total`          | NUMERIC     | Total price           |
+| Field            | Type          | Description           |
+| ---------------- | :-----------: | --------------------- |
+| `id`             | SERIAL (PK)   | Unique indeficator    |
+| `invoice_number` | VARCHAR       | Invoce number         |
+| `invoice_date`   | TIMESTAMP     | Invoce date           |
+| `order_id`       | UUID (FK)     | Foreign key for order |
+| `total`          | NUMERIC       | Total price           |
 
 ## Table `tax_invoices`
 
-| Field                | Type        | Description              |
-| -------------------- | ----------- | ------------------------ |
-| `id`                 | SERIAL (PK) | Unique indeficator       |
-| `tax_invoice_number` | VARCHAR     | Number of tax invoice    |
-| `tax_invoice_date`   | TIMESTAMP   | Date of tax invoice      |
-| `document_id`        | UUID (FK)   | Foreign key for document |
+| Field                | Type          | Description              |
+| -------------------- | :-----------: | ------------------------ |
+| `id`                 | SERIAL (PK)   | Unique indeficator       |
+| `tax_invoice_number` | VARCHAR       | Number of tax invoice    |
+| `tax_invoice_date`   | TIMESTAMP     | Date of tax invoice      |
+| `document_id`        | UUID (FK)     | Foreign key for document |
 
 ## Table `document_links`
 
-| Field       | Type        | Description                     |
-| ----------- | ----------- | ------------------------------- |
-| `id`        | SERIAL (PK) | Unique indeficator              |
-| `parent_id` | UUID (FK)   | Foreign key for parent document |
-| `child_id`  | UUID (FK)   | Foreign key for child document  |
+| Field       | Type          | Description                     |
+| ----------- | :-----------: | ------------------------------- |
+| `id`        | SERIAL (PK)   | Unique indeficator              |
+| `parent_id` | UUID (FK)     | Foreign key for parent document |
+| `child_id`  | UUID (FK)     | Foreign key for child document  |
