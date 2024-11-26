@@ -30,6 +30,7 @@ CREATE TABLE documents (
     FOREIGN KEY (partner_id) REFERENCES partners(id)
 );
 
+
 -- Table: product_lines
 CREATE TABLE product_lines (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
